@@ -1,0 +1,26 @@
+{
+  "name": "ws-client-tester",
+  "version": "0.0.1",
+  "description": "Application to test websocket clients.",
+  "main": "main.ts",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node --no-warnings ./dist/main.js",
+    "dev": "node --experimental-specifier-resolution=node --no-warnings --loader ts-node/esm ./src/main.ts",
+    "build": "tsc"
+  },
+  "author": "Fabio Henrique de Assis",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.3.0"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.5",
+    "utf-8-validate": "^5.0.7"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.2.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
